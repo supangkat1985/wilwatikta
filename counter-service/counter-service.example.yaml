@@ -1,0 +1,15 @@
+conn:
+  redis:
+    enabled: true
+    addr: localhost:6379
+    username:
+    password:
+    db: 0
+    max_retries: 10
+    min_retry_backoff: 5s
+    max_retry_backoff: 60s
+    pool_size: 100
+telemetry:
+  enabled: true
+  jaeger:
+    url: http://localhost:14268/api/traces
